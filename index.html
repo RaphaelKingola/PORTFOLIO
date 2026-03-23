@@ -1,23 +1,39 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Meta settings -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raphael Porfolio</title>
+
+    <!-- Page title -->
+    <title>Raphael Portfolio</title>
   </head>
+
   <body>
+    <!-- ===== HEADER SECTION ===== -->
     <header>
       <h1>Raphael Muthini</h1>
-      <p>Software Engineer | Graphic Designer | UI/UX designer</p>
+
+      <!-- My Image -->
+      <img src="images/0O3A3458.jpg" alt="Raphael" width="200" />
+
+      <p>Software Engineer | Graphic Designer | UI/UX Designer</p>
     </header>
+
+    <!-- ===== NAVIGATION ===== -->
     <nav>
-      <a href="#About">About Me</a>
-      <a href="#Skills">Skills</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#referees">Referees </a>
+      <a href="#referees">Referees</a>
+      <a href="#register">Register</a>
+      <a href="#login">Login</a>
     </nav>
+
     <hr />
-    <section id="About">
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
       <h2>About Me</h2>
       <p>
         My name is Raphael. I am a graphic designer with 3 years of experience
@@ -26,6 +42,8 @@
         digital products.
       </p>
     </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
     <section id="skills">
       <h2>Skills</h2>
       <ul>
@@ -35,32 +53,120 @@
         <li>Content Creation</li>
       </ul>
     </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
     <section id="experience">
       <h2>Experience</h2>
+
       <h3>Graphic Designer</h3>
       <p>
         Created flyers, branding materials, and digital marketing content for
         businesses.
       </p>
+
       <h3>Content Creator</h3>
       <p>
         Produced video content and promotional visuals for clients and social
         media.
       </p>
-    </section>
-    <section id="referees"></section>
-    <h2>Referees</h2>
-    <ul>
-        <li>Available Upon Request</li>
-    </ul>
-</section>
-<hr>
-<section id="referees">
-    <h2>Referees</h2>
-    <ul>
-        <li>Available Upon Request</li>
-    </ul>
 
-</section>
+      <!-- ===== TABLE ===== -->
+      <h3>Work Summary</h3>
+      <table border="1">
+        <tr>
+          <th>Role</th>
+          <th>Years</th>
+          <th>Tools Used</th>
+        </tr>
+        <tr>
+          <td>Graphic Designer</td>
+          <td>3</td>
+          <td>Photoshop, Illustrator</td>
+        </tr>
+        <tr>
+          <td>Content Creator</td>
+          <td>2</td>
+          <td>Premiere Pro, After Effects</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ===== REFEREES SECTION ===== -->
+    <section id="referees">
+      <h2>Referees</h2>
+      <ul>
+        <li>Available Upon Request</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- ===== REGISTER FORM ===== -->
+    <section id="register">
+      <h2>Register</h2>
+
+      <form>
+        <!-- Names -->
+        <label>First Name:</label><br />
+        <input type="text" name="firstname" required /><br /><br />
+
+        <label>Last Name:</label><br />
+        <input type="text" name="lastname" required /><br /><br />
+
+        <!-- Year of birth-->
+        <label>Year of Birth:</label><br />
+        <input type="number" name="year" /><br /><br />
+
+        <!-- Email -->
+        <label>Email:</label><br />
+        <input type="email" name="email" required /><br /><br />
+
+        <label>Phone:</label><br />
+        <input type="tel" name="tel" /><br /><br />
+
+        <label>City:</label><br />
+        <input type="text" name="city" /><br /><br />
+
+        <!-- EXTRA FIELDS -->
+        <label>Gender:</label><br />
+        <input type="radio" name="gender" /> Male
+        <input type="radio" name="gender" /> Female<br /><br />
+
+        <label>Skills:</label><br />
+        <input type="checkbox" /> Design <input type="checkbox" /> Coding
+        <input type="checkbox" /> Editing<br /><br />
+
+        <!-- Password -->
+        <label>Password:</label><br />
+        <input type="password" required /><br /><br />
+
+        <label>Confirm Password:</label><br />
+        <input type="password" required /><br /><br />
+
+        <!-- Bio -->
+        <label>Describe Yourself:</label><br />
+        <textarea rows="4" cols="30"></textarea><br /><br />
+
+        <!-- Submit -->
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <hr />
+
+    <!-- ===== LOGIN FORM ===== -->
+    <section id="login">
+      <h2>Login</h2>
+
+      <form>
+        <label>Username:</label><br />
+        <input type="text" required /><br /><br />
+
+        <label>Password:</label><br />
+        <input type="password" required /><br /><br />
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
   </body>
 </html>
